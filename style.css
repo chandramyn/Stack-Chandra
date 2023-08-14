@@ -1,0 +1,78 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: skyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    top: 0;
+    left: 0;
+    background-color: whitesmoke;
+}
+
+.hero {
+    position: relative;
+    z-index: 10;
+    height: 85vh;
+    width: 75%;
+    background: rgba(255, 255, 255, 0.1);
+    border: 3px solid rgb(30, 0, 255);
+    border-radius: 20px;
+    box-shadow: -15px 17px rgba(10, 10, 10, 0.15);
+    padding: 0 40px 0 80px;
+}
+
+.hero nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+}
+
+.hero nav .logo {
+    color: darkblue;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.hero nav .nav-links a {
+    color: black;
+    margin: 0 10px;
+    text-transform: capitalize;
+    transition: 0.3s;
+}
+
+.hero nav .nav-links a:hover,
+.hero nav .nav-links a.active {
+    color: darkblue;
+}
+
+.hero .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 40px;
+}
+
+.hero .content .div-text {
+    width: 40%;
+}
+
